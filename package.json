@@ -1,0 +1,23 @@
+{
+  "name": "hangman_game",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "format" : "prettier --write app",
+    "start" : "http-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/norbertgawlik/hangman_game.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/norbertgawlik/hangman_game/issues"
+  },
+  "homepage": "https://github.com/norbertgawlik/hangman_game#readme",
+  "devDependencies": {
+    "prettier": "^2.7.1"
+  }
+}
