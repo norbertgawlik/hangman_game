@@ -1,0 +1,24 @@
+body{
+    font-family: "Open-sans", sans-serif;
+}
+
+#password{
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+#keyboard button{
+    text-transform: uppercase;
+    margin: 0 3px 3px 0;
+}
+#keyboard button.inactive{
+    opacity:0.5;
+}
+
+.status.red{
+    color:red;
+}
+
+.status.green{
+    color:green;
+}
