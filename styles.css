@@ -14,3 +14,11 @@ body{
 #keyboard button.inactive{
     opacity:0.5;
 }
+
+.status.red{
+    color:red;
+}
+
+.status.green{
+    color:green;
+}

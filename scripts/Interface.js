@@ -40,16 +40,23 @@ export class Interface {
                     this.lifes--;
                     if(this.lifes == 0){
                         this.endGame(false);
+                    }else{
+                        this.lifesWrap.querySelector('strong').innerHTML = this.lifes;
                     }
                 }
             }
         })
     }
     endGame(status){
-        if(status){
-            console.log("WON!");
-        }else{
-            console.log("LOST!");
-        }
+        const wrap = document.querySelector('#wrap');
+        const info = status ? "Wygrałeś!" : "Przegrałeś!";
+        const color = status ? "green" : "red";
+
+        wrap.innerHTML = `<div class="status ${color}">${info}</div>`;
+        const refresh = document.createElement('button');
+        refresh.innerHTML = "Zagraj ponownie >"
+        refresh.classList.add('refresh');
+        wrap.appendChild(refresh);
+        refresh.addEventListener('click',()=>window.location.reload());
     }
 }
